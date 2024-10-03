@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <script
+      src="https://kit.fontawesome.com/7d0c750dc2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="aale marathe.jpg" alt="" class="song-img" id="song-img" />
+        <h1 id="song-title">Aale Marathe</h1>
+        <audio id="song">
+          <source
+            src="Aale Marathe आले मराठे _ Video Song _ Digpal Lanjekar _ Devdutta Baji _ Subhedar सुभेदार.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls">
+          <div class="preveous-song" onclick="prevSong()">
+            <i class="fa-solid fa-backward"></i>
+          </div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div class="next-song" onclick="nextSong()">
+            <i class="fa-solid fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
